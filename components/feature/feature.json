@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_feature_features",
+  "info": {
+    "name": "feature",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blog": {
+      "model": "blogs"
+    }
+  }
+}

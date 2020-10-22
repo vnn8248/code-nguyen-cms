@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "name": "languages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portfolio": {
+      "via": "languages",
+      "model": "portfolios"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
