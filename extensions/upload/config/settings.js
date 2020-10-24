@@ -1,13 +1,15 @@
-if (process.env.NODE_ENV === 'production') {
-  module.exports = {
-    provider: 'cloudinary',
-    providerOptions: {
-      cloud_name: process.env.PROVIDER_CLOUD_NAME,
-      api_key: process.env.PROVIDER_API_KEY,
-      api_secret: process.env.PROVIDER_API_SECRET,
-    },
-  };
-} else {
-  // to use the default local provider you can return an empty configuration
-  module.exports = {};
-}
+module.exports = ({ env }) => {
+  if (env("NODE_ENV") === "production") {
+    return {
+      upload: {
+        provider: 'cloudinary',
+        providerOptions: {
+          cloud_name: env('CLOUDINARY_NAME'),
+          api_key: env('CLOUDINARY_KEY'),
+          api_secret: env('CLOUDINARY_SECRET'),
+        },
+      },
+    }
+  }
+  // ...
+};
