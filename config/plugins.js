@@ -1,6 +1,6 @@
-// module.exports = ({ env }) => {
-  if (env("NODE_ENV") === "production") {
-    return {
+ module.exports = ({ env }) => ({
+  // if (env("NODE_ENV") === "production") {
+  //   return {
       upload: {
         provider: 'cloudinary',
         providerOptions: {
@@ -9,7 +9,7 @@
           api_secret: env('CLOUDINARY_SECRET'),
         }
       }
-    }
-  }
+  //   }
+  // }
   // ...
-// };
+});
