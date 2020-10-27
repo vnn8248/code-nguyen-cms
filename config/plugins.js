@@ -1,4 +1,4 @@
-module.exports = ({ env }) => {
+// module.exports = ({ env }) => {
   if (env("NODE_ENV") === "production") {
     return {
       upload: {
@@ -12,4 +12,4 @@ module.exports = ({ env }) => {
     }
   }
   // ...
-};
+// };
