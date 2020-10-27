@@ -4,9 +4,9 @@
       upload: {
         provider: 'cloudinary',
         providerOptions: {
-          cloud_name: "code-nguyen",
-          api_key: 929775517861495,
-          api_secret: "eyEn1Hui5drFBBll3SW6z56coi8",
+          cloud_name: env("CLOUDINARY_NAME"),
+          api_key: env("CLOUDINARY_KEY"),
+          api_secret: env("CLOUDINARY_SECRET"),
         }
       }
   //   }
