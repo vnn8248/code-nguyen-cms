@@ -11,9 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "portfolio": {
+    "portfolios": {
+      "collection": "portfolios",
       "via": "languages",
-      "model": "portfolios"
+      "dominant": true
     },
     "name": {
       "type": "string"

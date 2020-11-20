@@ -34,10 +34,6 @@
       "plugin": "upload",
       "required": false
     },
-    "languages": {
-      "collection": "languages",
-      "via": "portfolio"
-    },
     "slug": {
       "type": "string",
       "private": false
@@ -52,6 +48,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "languages": {
+      "via": "portfolios",
+      "collection": "languages"
     }
   }
 }
